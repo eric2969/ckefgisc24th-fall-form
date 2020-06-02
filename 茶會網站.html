@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CKEFGISC</title>
+	<link rel="Shortcut Icon" type="image/x-icon" href="logo.jpg"/>
+	
+	<style type="text/css">
+		@import url('試作1號.css');
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+		@import url('contain.css');
+		canvas{position:fixed;}
+		#top{
+			font-family: 'Poiret One', cursive;
+		}
+		.button {
+			font-size: 25px;
+			width: 200px;
+			height: 40px;
+			border: 2px solid;
+			background: #cce6ff;
+			border-color: black;
+			color:  black;
+			font-family: 'cwTeXYen', sans-serif;
+			border-radius: 10px; 
+			box-sizing: border-box;
+	        outline: none;
+        }
+		.button:hover{
+		  	background: #3d0099;
+		  	border-color: white;
+			color: white;
+			transition: background 1s , color 1s, border-color  1s;
+		}
+                
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	      if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		document.location.href="homepage.html"
+		}
+	</script>
+	<meta charset="utf-8">
+</head>
+<body style="background-color: #ffe6e6;">
+	
+	<div id="center" >
+		<canvas id="OAO" style="width: 300px;
+		height: 150px; z-index: -1;">您的瀏覽器不支援QAQ</canvas>
+		<div id="word" >
+			CKEISC<br>x<br>FGISC<br>
+		</div>
+	</div>
+	<div id="g">
+		<div id="cover1" class="cover">1</div>
+		<div id=up>
+			<div style="color: white;font-size: 20px; left: 20px;top:20px; position: fixed">CKEFGISC</div>
+			<ul id="bar">
+				<li class="menu"></li>
+				<li class="menu" onclick="t_f()">北資茶會</li>
+				<li >|</li>
+				<li class="menu" onclick="t_c()"><a>建電茶會</a></li>
+				<li >|</li>
+				<li class="menu"><a href="sign_up.html" style="color: white;text-decoration: none ">報名吧!</a></li>
+			</ul>
+		</div>
+		<div id="bg">
+			<img src="back.png" style="width: 100%;height: 100%;">
+		</div>	
+		<div id="top">
+			<img src="images.png" data-key="images.png" style="width: 100%; max-height: 100%;">
+			<img src="test.png" data-key="test.png" class="star1">
+			<img src="test1.png" data-key="test1.png" class="star2">
+			<img src="test2.png" data-key="test2.png" class="star3">
+			<img src="test3.png" data-key="test3.png" class="star4">
+			<img src="test4.png" data-key="test4.png" class="star5">
+			<img src="test5.png" data-key="test5.png" class="star6">
+			<img src="test6.png" data-key="test6.png" class="star7">
+			<img src="test7.png" data-key="test7.png" class="star8">
+			<img src="test8.png" data-key="test8.png" class="star9">
+			<img src="test9.png" data-key="test9.png" class="star10">
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript">
+				var a="star";
+				function A(){
+					for(var b =0;b<10;b++){
+						var XD=Math.floor(Math.random()*3+0);
+						var Str="."+ a + (b+1);
+						if(XD>0.5)	$(Str).css({"animation":"flash 2s infinite","animation-direction":"alternate"});
+						else $(Str).css("animation","OAO");
+					}
+				}
+				setInterval(A,1000);</script>
+			<div id="OwO">
+				<div id="tw" style="left: 50%;"></div>
+				<div id="topword" >
+					<span id="t_1">FGISC x CKEISC <br><br></span>
+					<span id="t_2">
+						stargazing x nebula<br>22nd x 23rd 
+						<span style="font-family: 微軟正黑體">
+							交接茶會
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div id="right" class="side">
+			<div id="mark">
+				<img id="m_img" src="圖片3.png"> 
+			</div>
+			<!--<div id="page">
+				<div id="first" class="circle">1</div>
+				<div id="second" class="circle">2</div>
+				<div id="third" class="circle">3</div>
+			</div>-->
+		</div>
+		<div id="main" class="contain">
+				<div class="QAQ" style="height: 50px;background: black;opacity: 1;">
+				</div>
+				<div class=glass></div>
+				<div id="fgisc" class="QAQ">
+					<div id="F_T" class="tittle" style="height: 20vh;"><img src="F-tittle.png"></div>
+					<div class="inside">
+						<div class="P" ><span style="font-size: 70px;">FGISC</span> 31x32</div><br>
+						<div class="P" >Date &#160; |  &#160;2018.07.04</div>
+						<div class="P" >Time &#160; |  &#160;13:00~17:00</div>
+						<div class="P" >Place &#160;|  &#160;北一女中中正樓一樓101教室<br>
+									&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-size: 35px;">(台北市中正區重慶南路一段165號)</span></div>
+						<div class="P"  >Reception：  <br>
+							<span style="font-size: 38px;">
+							&#160;&#160;職密： 余采軒(蜥蜴)<br>
+							&#160;&#160;捷運台大醫院站1號出口： 林語婕(ㄩㄐ)<br>
+							&#160;&#160;捷運小南門站4號出口：  林芳伃(番茄)<br>
+							&#160;&#160;北一女中校門口 :  邱宥菱(貓貓)<br>
+						</div>
+						<div class="P SCH_T" >Schedule：  <br><br>
+								<div class="sch">13:00~13:50&#160;&#160;| &#160;&#160;幹部介紹  </div>
+								<div class="sch">13:50~14:15&#160;&#160;| &#160;&#160;友社介紹  </div>
+								<div class="sch">14:15~14:45&#160;&#160;| &#160;&#160;公關時間  </div>
+								<div class="sch">14:45~15:30&#160;&#160;| &#160;&#160;大地遊戲  </div>
+								<div class="sch">15:40~17:00&#160;&#160;| &#160;&#160;影片時間+交接時間  </div>
+						</div>
+					</div>
+				</div>
+				<div class=glass></div>
+				<div id="ckeisc" class="QAQ">
+					<div  id="C_T" class="tittle" style="height: 20vh ;"><img src="C-tittle.png"></div>
+						<div class="inside">
+							<div class="P"><span style="font-size: 70px;">CKEISC</span> 37x38</div><br>
+							<div class="P">Date |  &#160;2018.07.05</div>
+							<div class="P">Time |  &#160;13:00~17:00</div>
+							<div class="P" >Place &#160;|  &#160;建國中學明道樓最靠實小的教室<br>
+									&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-size: 35px;">(台北市中正區南海路56號)</span></div>
+							<div class="P">Reception：   <br>
+								<span style="font-size: 38px;">
+								&#160;&#160;捷運中正紀念堂站1號出口：某人(我好森七)<br>
+								&#160;&#160;捷運小南門站4號出口：某某人(為什麼不早點問)<br>
+								&#160;&#160;建國中學校門口：某某某人(催了那麼久了吼)<br>
+								</span>
+							</div>
+							<div class="P">Schedule：<br><br>
+								<div class="sch">13:00~13:15&#160;&#160;| &#160;&#160;幹部介紹  </div>
+								<div class="sch">13:15~13:30&#160;&#160;| &#160;&#160;友社介紹  </div>
+								<div class="sch">13:30~14:00&#160;&#160;| &#160;&#160;公關時間  </div>
+								<div class="sch">14:00~15:30&#160;&#160;| &#160;&#160;大地遊戲  </div>
+								<div class="sch">15:40~16:10&#160;&#160;| &#160;&#160;影片時間 </div>
+								<div class="sch">16:10~17:00&#160;&#160;| &#160;&#160;交接時間 </div>
+							</div>
+						</div>
+				</div>
+				<div class=glass></div>
+				<div class="QAQ">
+					<div style="top: -95px;width: 100%;  font-size: 90px; font-family: 'cwTeXYen' " class="tittle">夜遊。住宿。台北遊</div>
+						<div class="inside" style="padding: 0px;padding-top: 3vw;padding-bottom: 3vw;">
+							<div class="obj">
+								<div class="pic"><div class="pp">
+									<img src="night.png" class="else">
+								</div></div>
+								<div class="art"> <span style="font-size: 60px;">夜遊</span>
+									<br>
+									地點： 饒河夜市；<br>
+									時間： p.m.6:00(?)~ p.m.9:00；<br>
+									介紹： 晚點再寫。；<br>
+								</div> 
+							</div><div class="obj">
+								<div class="art"> <span style="font-size: 60px;">住宿</span>
+									<br>
+									地點： 天使青旅；<br>
+									(台北市中正區衡陽路51號)<br>
+									費用： 600元<br><br>
+								</div>
+								<div class="pic"><div class="pp"><img src="hotel.png" class="else"></div> </div>
+							</div>
+							<div class="obj">
+								<div class="pic"><div class="pp"><img src="Taipei.png" class="else"></div></div>
+								<div class="art"> <span style="font-size: 60px;">台北遊</span>
+									<br>
+									地點： 木柵動物園；<br>
+									時間： a.m.8:20~ a.m.12:00；<br>
+									//從飯店出發。<br>
+									介紹： 晚點再寫。；<br>
+								</div> 
+							</div>
+						</div>
+				</div>
+		</div>
+				<div class=glass></div>
+		<div id="form" class="contain"  style="height: 30vh" >
+				<div class="QAQ" style="height: 100%">
+					<div class="inside" style="border: 0px;">
+					<button type="button" class="button" style="width: 300px; float: right;" onclick=" document.location.href='sign_up.html' " >立刻報名</button>
+					</div>
+				</div>
+		</div>
+	</div>
+	<script type="text/javascript"  src="C:\Users\andru\Desktop\成發\jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		var mi=true;
+		var where =-1;
+		var wait=false;
+		var hey=false;
+		var go=false;
+		function ani(){
+			if(go) return;
+			go = true;
+			$('#mark').css('animation','s 2s ');
+			setTimeout( function(){$('#mark').css('animation','OAO');}	,2000);
+			go = false;
+		}
+		$(window).scroll(function(){
+			for(var i=0;i<$(".P ").length;i++){
+				if($(".P ").eq(i).offset().top < $(window).scrollTop()+600){
+					$(".P ").eq(i).css("animation","p_move 1.5s");
+					$(".P ").eq(i).css("left","0px");
+				}
+			}
+			for(var i=0;i<$(".pp ").length;i++){
+				if($(".pp ").eq(i).offset().top < $(window).scrollTop()+600){
+					$(".pp ").eq(i).css("animation","putong 1.5s");
+					$(".pp ").eq(i).css("width","30vw");
+				}
+			}
+			if($(window).scrollTop() + 60 >= $(window).height() ){
+				if(mi){
+					$('#m_img').attr("src","圖片3.png");
+					where = -1;
+					/*$('#F').css('animation','move_out 1s');
+					$('#C').css('animation','move_out 1.5s');
+					$('#S').css('animation','move_out 2s');
+					$('#first').css('animation','move_out1 1.5s');
+					$('#second').css('animation','move_out2 1s');
+					$('#third').css('animation','move_out3 0.5s');*/
+					$('#mark').css('animation','move_outM 1.5s');
+					mi=false;
+					setTimeout(function(){ 
+						/*$('#F').css('left','20px');
+						$('#C').css('left','20px');
+						$('#S').css('left','20px'); 
+						$('#first').css('top','-10px');
+						$('#second').css('top','-10px');
+						$('#third').css('top','-10px');*/
+						$('#mark').css('top','60px');
+					}, 500);
+				}
+			}
+			else {
+				if(!mi){
+					mi = true;
+					/*$('#F').css('animation','move_in 1s');
+					$('#C').css('animation','move_in 1s');
+					$('#S').css('animation','move_in 1s');
+					$('#first').css('animation','move_in1 1s');
+					$('#second').css('animation','move_in2 1.5s');
+					$('#third').css('animation','move_in3 2s');*/
+					$('#mark').css('animation','move_inM 2.5s');
+					setTimeout(function(){ 
+						/*$('#F').css('left','-1
+						50px');
+						$('#C').css('left','-150px');
+						$('#S').css('left','-150px');
+						$('#first').css('top','-1000px');
+						$('#second').css('top','-1000px');
+						$('#third').css('top','-1000px');*/
+						$('#mark').css('top','-1000px');
+					}, 500);
+				}
+			}
+			if(hey==true) return;
+			if(go) return;
+			hey = true;
+			var C_O = (500-($('#C_T').offset().top-300-$(window).scrollTop()))/1000;
+			var F_O = (300-($('#F_T').offset().top-300-$(window).scrollTop()))/500;
+			if(C_O<0) C_O = 0;
+			else if(C_O>=0.5) C_O = 1;
+			if(F_O<0) F_O = 0;
+			else if(F_O>=0.5) F_O = 1;
+			$('#ckeisc').css('opacity',C_O);
+			$('#fgisc').css('opacity',F_O);
+			if($(window).scrollTop() >=  $('#C_T').offset().top-500){
+				if(where!=1){
+					wait = true;
+					$('#m_img').attr("src","ckeisc.png");
+					ani();
+				}
+				where = 1;
+			}
+			else if($(window).scrollTop() >= $('#F_T').offset().top-200){
+				if(where!=0&&!wait){
+					wait = true;
+					$('#m_img').attr("src","圖片3.png");
+					ani();
+				}
+				where = 0;
+			}
+			wait = false;
+			hey = false;
+		})
+		$("#mark").click(
+			function QAQ(){
+				if(wait==true) return;
+				if(go==true) return;
+				wait = true;
+				if(where==0){
+					$('html,body').animate({scrollTop: $('#C_T').offset().top-250}, 1000);
+					ani();
+					where = 1;
+				}
+				else{
+       				$('html,body').animate({scrollTop: $('#F_T').offset().top-200}, 1000);
+					where = 0;
+				}
+			}
+		);
+		function t_f(){
+			if(wait==true) return;
+			if(go==true) return;
+			wait = true;
+			if(where!=0){
+				$('html,body').animate({scrollTop: $('#F_T').offset().top-200}, 1000);
+				where = 0;
+			}
+			wait = false;
+		}
+
+		function t_c(){
+			if(wait==true) return;
+			if(go==true) return;
+			wait = true;
+			if(where==0){
+				$('html,body').animate({scrollTop: $('#C_T').offset().top-200}, 1000);
+				where = 0;
+			}
+			wait = false;
+		}
+
+		var canvas = document.getElementById("OAO");
+		var ctx = canvas.getContext("2d");
+		var test=ctx.createLinearGradient(0,0,300,150);
+		test.addColorStop(0,"black");
+		test.addColorStop(1,"#00004d");
+		var now = 0;
+		var d = 0;
+		canvas.width = 300;
+    	canvas.height = 150;
+    	var v = 10;
+    	var enter = false;
+    	var O_O=false;
+		function s(){
+			ctx.fillStyle=test;
+			if(d==2){
+				ctx.beginPath();
+				ctx.fillRect(295,now,5,v);
+				ctx.closePath();
+				now-=v;
+				if(now<0) {d++;now=300;}
+			}
+			if(d==0){
+				ctx.beginPath();
+				ctx.fillRect(0,now,5,v);
+				ctx.closePath();
+				now+=v;
+				if(now>=150) {d++;now=0;}
+			}
+			if(d==1){
+				ctx.beginPath();
+				ctx.fillRect(now,145,v,5);
+				ctx.closePath();
+				now+=v;
+				if(now>300) {d++;now=150;}
+			}
+			
+			if(d==3){
+				ctx.beginPath();
+				ctx.fillRect(now,0,v,5);
+				ctx.closePath();
+				now-=v;
+				if(now<0) {d++;}
+			}
+			if(d>3){
+				if(d<5) d++;
+				if(O_O)	 ctx.fillRect(0,0,300,150);
+				else  {
+					ctx.clearRect(5,5,290,140);
+				}
+			}
+		}
+		var open = false;
+		function draw(){
+			s();
+			if(d>3){
+				document.getElementById("word").style.animation='show 0.5s';
+				document.getElementById("word").style.opacity='1';
+				open = true;
+			}
+		}
+		setInterval(draw, 10);
+		document.getElementById("word").style.display='block';
+		var QAQ = document.getElementById("center");
+		QAQ.addEventListener("mouseover", black);
+		QAQ.addEventListener("mouseout", white);
+		function black(){
+			if(d<5) return;
+			O_O = true;
+			if(!open) return;
+			$("#center").css("color","white");
+		}
+		function white(){
+			if(d<5) return;
+			if(!open) return;
+			O_O = false;
+			$("#center").css("color","black");
+		}
+		/*
+		$(document).mousemove(function (e) {
+			sx = e.pageX + document.documentElement.scrollTop;
+			sy = e.pageY + document.documentElement.scrollLeft;
+		});*/
+		$("#center").click(
+			function hide(){
+				$("#center").css("display","none");
+				$("#g").css("display","block");
+				$('#mark').css('display','block');
+				$('#OwO').css('animation','show3 1.5s');
+				enter = true;
+			}
+		);
+		
+	</script>
+	<script type="text/javascript"  src="C:\Users\andru\Desktop\成發\jquery-3.2.1.js"></script>
+	
+</body>
+</html>

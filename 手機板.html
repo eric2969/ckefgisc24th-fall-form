@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>試作</title>
+	<link rel="Shortcut Icon" type="image/x-icon" href="logo.jpg"/>
+	<style type="text/css">
+		@import url('mobile-home.css');
+		@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+		canvas{position:fixed;}
+		#top{
+			font-family: 'Poiret One', cursive;
+		}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+       	/*function f_s(){
+			var wdth =$(window).width();
+       		var test = document.querySelectorAll('#top img');
+	       	*/
+	//       	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+	//		}
+		/*}/*
+		$(window).resize(function() {
+			var wdth =$(window).width();
+       		var test = document.querySelectorAll('#top img');
+       		if ( wdth< 600 ) {	
+				for(var i=0;i<test.length;i++)
+					test[i].src = "phone-"+test[i].dataset.key;
+			}
+			else{
+				for(var i=0;i<test.length;i++)
+					test[i].src = test[i].dataset.key;
+			}
+    	});*/
+	</script>
+	<meta charset="utf-8">
+</head>
+<body style="background-color: #ffe6e6;background: url('temp.png');">
+	<!--
+	<div id="center" >
+		<canvas id="OAO" style="width: 300px;
+		height: 150px; z-index: -1;">您的瀏覽器不支援QAQ</canvas>
+		<div id="word" >
+			CKEISC<br>x<br>FGISC<br>
+		</div>
+	</div>-->
+	<div style="background: url('phone-back.png'); background-size: cover; width: 100vw; height: 100vh;position: fixed;"></div>
+	<div id="g" >
+		<div id="cover1" class="cover" style="position: fixed;">1</div>
+		<div id=up style="position: fixed;">
+			<div style="color: white;font-size: 2.5vw; left: 4vw; top: 4vw; position: absolute;	" onclick="t_top()">CKEFGISC</div>
+			<div id="bar">
+				<ul style="margin: 0;padding: 0;">
+					<li class="menu" onclick="t_f()">北資茶會</li>
+					<li class="menudeco">|</li>
+					<li class="menu" onclick="t_c()"><a>建電茶會</a></li>
+					<li class="menudeco">|</li>
+					<li class="menu"><a href="mobile.html" style="color: white;text-decoration: none ">報名吧!</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--<div id="bg">
+			<img src="back.png" style="width: 100%;height: 100%;">
+		</div>-->	
+		<div id="top" >
+			<div  style=" background: url('phone-sky.png'); background-size: cover; opacity: 0.5; width: 100%; height: 100%;" ></div>
+			<div id="topword" style="opacity: 1;">
+				<img src="tittle.png">
+			</div>
+		</div>
+		<div id="main" class="contain">
+				<div class="QAQ" style="height: 50px;background: black;opacity: 1;">
+				</div>
+				<div class=glass></div>
+				<div id="fgisc" class="QAQ">
+					<div id="F_T" class="tittle"><img src="F-tittle.png"></div>
+					<div class="inside" style="text-align: left;">
+						<div class="P" ><span style="font-size: 70px;">FGISC</span> 31x32</div><br>
+						<div class="P" >Date &#160;&#160; |  &#160;2018.07.04</div>
+						<div class="P" >Time &#160; |  &#160;13:00~17:00</div>
+						<div class="P" >Place &#160;|  &#160;<span style="font-size: 3vw;">北一女中中正樓一樓101教室</span><br>
+									&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-size: 35px;">(台北市中正區重慶南路一段165號)</span></div>
+						<div class="P"  >Connect：  <br>
+							<span style="font-size: 38px;">
+							&#160;&#160;職密： 余采軒(蜥蜴)<br>
+							&#160;&#160;捷運台大醫院站1號出口： 林語婕(ㄩㄐ)<br>
+							&#160;&#160;捷運小南門站4號出口：  林芳伃(番茄)<br>
+							&#160;&#160;北一女中校門口 :  邱宥菱(貓貓)<br>
+						</div>
+						<div class="P SCH_T" >Schedule：  <br><br>
+								<div class="sch">13:00~13:50&#160;&#160;| &#160;&#160;幹部介紹  </div>
+								<div class="sch">13:50~14:15&#160;&#160;| &#160;&#160;友社介紹  </div>
+								<div class="sch">14:15~14:45&#160;&#160;| &#160;&#160;公關時間  </div>
+								<div class="sch">14:45~15:30&#160;&#160;| &#160;&#160;大地遊戲  </div>
+								<div class="sch">15:40~17:00&#160;&#160;| &#160;&#160;影片時間+交接時間  </div>
+						</div>
+					</div>
+				</div>
+				<div class=glass></div>
+				<div id="ckeisc" class="QAQ">
+					<div  id="C_T" class="tittle"><img src="C-tittle.png"></div>
+						<div class="inside" style="text-align: left;">
+							<div class="P"><span style="font-size: 70px;">CKEISC</span> 37x38</div><br>
+							<div class="P">Date &#160;&#160; |  &#160;2018.07.05</div>
+							<div class="P">Time |  &#160;13:00~17:00</div>
+							<div class="P" >Place &#160;|  &#160; <span style="font-size: 3vw;">建國中學明道樓最靠實小的教室</span> <br>
+									&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-size: 35px;">(台北市中正區南海路56號)</span></div>
+							<div class="P">Connect：   <br>
+								<span style="font-size: 38px;">
+								&#160;&#160;捷運中正紀念堂站1號出口：某人(我好森七)<br>
+								&#160;&#160;捷運小南門站4號出口：某某人(為什麼不早點問)<br>
+								&#160;&#160;建國中學校門口：某某某人(催了那麼久了吼)<br>
+								</span>
+							</div>
+							<div class="P">Schedule：<br><br>
+								<div class="sch">13:00~13:15&#160;&#160;| &#160;&#160;幹部介紹  </div>
+								<div class="sch">13:15~13:30&#160;&#160;| &#160;&#160;友社介紹  </div>
+								<div class="sch">13:30~14:00&#160;&#160;| &#160;&#160;公關時間  </div>
+								<div class="sch">14:00~15:30&#160;&#160;| &#160;&#160;大地遊戲  </div>
+								<div class="sch">15:40~16:10&#160;&#160;| &#160;&#160;影片時間 </div>
+								<div class="sch">16:10~17:00&#160;&#160;| &#160;&#160;交接時間 </div>
+							</div>
+						</div>
+				</div>
+				<div class=glass></div>
+				<div class="QAQ">
+					<div style="top: -100px;width: 100%;  font-size: 90px; font-family: 'cwTeXYen' ;left:0px;" class="tittle">夜遊。住宿。台北遊</div>
+					<div class="inside" style="padding: 0px;">
+						<div class="obj">
+							<div class="pic">
+								<div class="pp">
+									<img src="night.png" class="else">
+								</div>
+							</div>
+							<div class="art" style="margin-right: 0.5px; text-align: right;">
+								<div class="aa" style=" font-size: 18vw; width: 40vw;">
+									夜遊
+								</div>
+								<div class="aa" style="position: relative; left: -3.5vw;">
+								<br>
+								地點： 饒河夜市；<br>
+								時間： p.m.6:00(?)~ p.m.9:00；<br>
+								</div>
+							</div> 
+						</div><div class="obj">
+							<div class="pic">
+								<div class="pp">
+									<img src="hotel.png" class="else" >
+								</div>
+							</div>
+							<div class="art" style="margin-right: 0.5px; text-align: right;">
+								<div class="aa" style="font-size: 18vw; width: 40vw;">
+									住宿
+								</div>
+								<div class="aa" style="position: relative; left: -3.5vw;">
+								<br>
+								地點： 天使青旅；<br>
+								(台北市中正區衡陽路51號)<br>
+								費用： 600元<br><br>
+								</div>
+							</div>
+						<div class="obj">
+							<div class="pic">
+								<div class="pp">
+									<img src="Taipei.png" class="else">
+								</div>
+							</div>
+							<div class="art" style="margin-right: 0.5px; ">
+								<div class="aa" style="font-size: 13vw; width: 40vw;">
+									台北遊
+								</div>
+								<div class="aa" style="position: relative; left: 1vw;">
+								地點： 木柵動物園；<br>
+								時間： a.m.8:20~ a.m.12:00；<br>
+								//從天使青旅出發。<br>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class=glass></div>
+		</div>
+		<div class="contain" style="height: 30vh; background-color: black;" >
+			<div style="position: absolute;color: white; font-size: 3vw; font-family: '微軟正黑體';  margin-top: 5vh;width: 100%;">Design By 覺得ㄅㄌ好帥喔的前端爆肝人</div>
+		</div>
+	</div>
+	<script type="text/javascript"  src="C:\Users\andru\Desktop\成發\jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$("#center").css("display","none");
+		$("#g").css("display","block");
+		$('#mark').css('display','block');
+		$('#OwO').css('animation','show3 1.5s');
+		$(window).scroll(function(){
+			for(var i=0;i<$(".P ").length;i++){
+				if($(".P ").eq(i).offset().top < $(window).scrollTop()+1600){
+					$(".P ").eq(i).css("animation","p_move 1.5s");
+					$(".P ").eq(i).css("left","0px");
+				}
+			}
+			for(var i=0;i<$(".pp ").length;i++){
+				if($(".pp ").eq(i).offset().top < $(window).scrollTop()+1000){
+					$(".pp ").eq(i).css("animation","putong 1.5s");
+					$(".pp ").eq(i).css("width","70vw");
+				}
+			}
+			var C_O = (700-($('#C_T').offset().top-300-$(window).scrollTop()))/1000;
+			var F_O = (400-($('#F_T').offset().top-300-$(window).scrollTop()))/500;
+			if(C_O<0) C_O = 0;
+			else if(C_O>=0.5) C_O = 1;
+			
+			if(F_O<0) F_O = 0;
+			else if(F_O>=0.5) F_O = 1;
+			
+			$('#ckeisc').css('opacity',C_O);
+			$('#fgisc').css('opacity',F_O);
+		})
+
+		function t_f(){
+			$('html,body').animate({scrollTop: $('#F_T').offset().top-200}, 1000);
+		}
+
+		function t_c(){
+			$('html,body').animate({scrollTop: $('#C_T').offset().top-200}, 1000);
+		}
+		function t_top(){
+			$('html,body').animate({scrollTop: 0}, 1000);
+		}
+	</script>
+	<script type="text/javascript"  src="C:\Users\andru\Desktop\成發\jquery-3.2.1.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,236 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>報名</title>
+	<style type="text/css">
+
+		@import url("form.css");
+		@import url('試作1號.css');
+		@import url('select.css');
+		@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+		input {outline: none;}
+		.optioncolor {
+			background: rgba(0,0,0,0.5);
+			color: black;
+			/*opacity: 0.5;
+			-moz-opacity: 0.5;
+			-webkit-opacity: 0.5;*/
+		}
+		select {
+			outline: none;
+			background: rgba(0,0,0,0.9);
+		}
+		option {
+			opacity: 0;
+			outline: none; border: none; background: rgba(255,255,255,0.1);
+		}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function select(e,id){
+			$(id+">span").html(e);
+			$(id).blur();
+		}
+
+	</script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div style="position: fixed;z-index: -100;">
+		<img src="back.png" style="width: 100%;height: 100%;">
+	</div>	
+	<div style="margin: 0; padding: 0; border:none; height: 300px;width: 100vw;	text-align: center;	position: relative;    overflow: hidden ;">
+			<div id="topword"  style="line-height: 30px; left: 23%; top: 50%;" >
+				<span id="t_1">SIGN UP<br><br></span>
+				<div style="background-color: white; position: absolute; left: 25%; border: 1.5px solid white; height: 0.1px; width: 50%; "></div>
+				<span style="font-size: 15px;position: absolute; left: 55%;">stargazing x nebula<br></span>
+			</div>
+	</div>	
+	<div style="left: 50%; margin-left: -500px;  z-index: -10; position: absolute; top: 0px; " >
+		<canvas id="OAO" width="1000" height="1000" style="border-radius: 20px;width: 1000px;height: 1000px;top: 0;"></canvas>
+	</div>
+    <script src="test.js"></script>
+    <!--<button onclick="stop()">HA</button>
+    <div id="x" style="background: white">123</div><br><div id="y" style="background: white">123</div>-->
+	<div class="formbg" style="font-family:微軟正黑體" id="FORM">
+		<div id ="f_main">
+		<form >
+		<div class="row">
+			<input type="text" name="你的名字。" class="tipe" data-content="OAO" placeholder="你的名字。" width="" id="name">
+			&#160;
+
+			<div style="text-align: center; line-height: 40px; color: gray;" class="ori menu" tabindex="0" onclick="return true" id="sex">
+			<!--<span></span>-->
+				<span data-key="性別">性別</span>
+				<div tabindex="0" onclick="return true">OAO</div>
+				<ul>
+					<li onclick="select('男','#sex')">男</li>
+					<li onclick="select('女','#sex')">女</li>
+					<li onclick="select('其他','#sex')">其他</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<input type="text" name="學校" class="tipe" data-content="OAO" placeholder="學校" id="school">
+			&#160;&#160;
+			<input type="text" name="社團" class="tipe" data-content="OAO" placeholder="社團" id="club">
+			&#160;&#160;
+			<div style="text-align: center; line-height: 40px; color: gray; width: 25%;" class="ori menu" tabindex="0" onclick="return true" id="grade" >
+			<!--<span></span>-->
+				<span data-key="屆數">屆數</span>
+				<div tabindex="0" onclick="return true">OAO</div>
+				<ul>
+					<li onclick="select('百七以上','#grade')">百七以上</li>
+					<li onclick="select('百七','#grade')">百七</li>
+					<li onclick="select('百八','#grade')">百八</li>
+					<li onclick="select('百九','#grade')">百九</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="checkbox">
+				<input type="checkbox" id="j_f">
+				<label class="lb" for="j_f" data-content="參加北資茶會" ></label>
+			</div>
+			&#160;
+			<div class="checkbox">
+				<input type="checkbox" id="j_c">
+				<label class="lb" for="j_c" data-content="參加建電茶會" ></label>
+			</div>
+				<!--<select name="性別" class="tipe" id="test" data-content="OAO" placeholder="性別">
+					<option>1234</option>
+					<option>uuy</option>
+					<option>6578</option>
+				</select>-->
+			&#160;&#160;&#160;
+		</div>
+		<div class="row">
+			<div class="checkbox">
+				<input type="checkbox" id="night">
+				<label class="lb" for="night" data-content=" 參加夜遊" ></label>
+			</div>
+			&#160;
+			<div class="checkbox">
+				<input type="checkbox" id="hotel" onclick="yes()">
+				<label class="lb" for="hotel" data-content=" 代訂住宿"  ></label>
+			</div>
+			&#160;
+			<div class="checkbox">
+				<input type="checkbox" id="Taipei">
+				<label class="lb" for="Taipei" data-content=" 台北遊"  ></label>
+			</div>
+		</div>
+		<div class="row">
+			<div style="text-align: center; line-height: 40px; color: gray;width: 50%;" class="ori menu" tabindex="0" onclick="return true" id="fp">
+			<!--<span></span>-->
+				<span data-key="北資集合地點">北資集合地點</span>
+				<div tabindex="0" onclick="return true">OAO</div>
+				<ul>
+					<li onclick="select('臺大醫院(1號出口)','#fp')" >臺大醫院校門口</a></li>
+					<li onclick="select('北一女中校門口','#fp')" >北一女中校門口</a></li>
+					<li onclick="select('小南門(4號出口)','#fp')" >小南門(4號出口)</a></li>
+				</ul>
+			</div>
+			&#160;
+			<div style="text-align: center; line-height: 40px; color: gray; width: 50%;" class="ori menu" tabindex="0" onclick="return true" id="cp">
+			<!--<span></span>-->
+				<span data-key="建電集合地點">建電集合地點</span>
+				<div tabindex="0" onclick="return true">OAO</div>
+				<ul>
+					<li onclick="select('裘莉家','#cp')">裘莉家</li>
+					<li onclick="select('德國','#cp')">德國</li>
+					<li onclick="select('地下87層松鼠洞','#cp')">地下87層松鼠洞</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" id="inf">
+			<input  style="width: 50%;" type="text" name="身分證字號" class="tipe" data-content="OAO" placeholder="身分證字號" id="ID">
+			&#160;&#160;
+			<input type="text" name="生日" class="tipe" data-content="OAO" placeholder="生日 (年/月/日)" style="font-size: 25px;width: 50%;" id="bir">
+		</div>
+
+		<div class="row">
+			<input style="width: 50%" type="text" name="電子郵件信箱" class="tipe" data-content="OAO" placeholder="電子郵件信箱" id="mail">
+			&#160;&#160;
+			<input style="width: 50%" type="text" name="手機號碼" class="tipe" data-content="OAO" placeholder="手機號碼" id="phone">
+		</div>
+		<div class="row">
+			<input style="width: 35%" type="text" name="緊急聯絡人" class="tipe" data-content="OAO" placeholder="緊急聯絡人" id="par">
+			&#160;
+			<input style="width: 20%" type="text" name="稱謂" class="tipe" data-content="OAO" placeholder="稱謂" id="who">
+			&#160;&#160;
+			<input style="width: 40%" type="text" name="緊急連絡人手機" class="tipe" data-content="OAO" placeholder="緊急聯絡人手機" id="p_p">
+		</div>
+		<textarea id="t_a"  class="tipe" style="width:100%; height:160px; outline: none;" placeholder="備註欄"></textarea>
+		<div id="empty" class="row">
+			額...請確認都有填寫再送出喔 :-D
+
+		</div>
+		<div class="row" style="justify-content: center;">
+			<button type="button" class="button" style="left: -70px;" id="sub" >送出</button>
+			&#160;&#160;&#160;
+			<button type="reset" class="button" onclick="QAQ()">重填</button>
+		</div>
+		</form>
+		</div>
+		<div id="success" class="row">
+			報名成功!
+		</div>
+		<div id="fail">
+			ㄅ欠 <br>
+			後端出了點小問題.......<br>
+			請稍後再嘗試送出<br>
+			或與我們聯繫<br>
+			QAQQQQQQQQ<br>
+		</div>
+	</div>
+	<div class="glass"></div>
+	<script src="WTF.js"></script>
+	<script type="text/javascript">
+		function QAQ(){
+			var test = document.querySelectorAll('.menu >span');
+			for(var i=0;i<2;i++)
+				test[i].innerHTML = test[i].dataset.key;
+			if(!$("#hotel").prop("checked")){
+				$('#inf').css('display','none');
+				$('#inf').css('animation',' ');
+			}
+			else{
+				$('#inf').css('display','flex');
+				$('#inf').css('animation','show4 1s');
+			}
+		}
+		/*
+		var suc = false;
+		function check(str) {
+    		if (str.length == 0) { 
+        		document.getElementById("aware").innerHTML = "";
+        		return;
+    		} else {
+        		var xmlhttp = new XMLHttpRequest();
+        		xmlhttp.onreadystatechange = function() {
+            		if (this.readyState == 4 && this.status == 200) {
+                		document.getElementById("aware").innerHTML = this.responseText;
+            		}
+        		}
+        		xmlhttp.open("GET", "check.php?q="+str, true);
+        		xmlhttp.send();
+    		}
+    		ch_sp();
+		}
+		function ch_sp(){
+		}*/
+		//<script type="text/javascript">
+		function yes(){
+			if(!$("#hotel").prop("checked")){
+				$('#inf').css('display','none');
+				$('#inf').css('animation',' ');
+			}
+			else{
+				$('#inf').css('display','flex');
+				$('#inf').css('animation','show4 1s');
+			}
+		};
+	</script>
+</body>
+</html>

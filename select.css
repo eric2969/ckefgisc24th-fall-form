@@ -1,0 +1,80 @@
+.menu {
+	display: inline-block;
+  	-webkit-user-select: none;
+	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+  	padding: 0;
+  	margin: 0;
+}
+
+.menu , .menu >div{
+	cursor: pointer;
+	outline: none;
+	 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu > ul{
+	position: absolute;
+	z-index: 1;
+	width: 90%;
+	visibility: hidden;
+}
+.menu{
+	outline: none;
+}
+
+.menu{
+	position: relative;
+}
+.menu:focus ul{
+	visibility: visible;
+}
+.menu:focus div{
+	display: block;
+}
+.menu >div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+	display: none;
+}
+
+
+.menu a {
+  	text-decoration: none;
+  	color: #555;
+}
+.menu > ul {
+	list-style: none;
+  	padding: 0;
+ 	margin-top: 2px;
+}
+
+.menu li {
+	text-align: center;
+	white-space:nowrap;
+  	padding: 6px;
+  	height: 25px;
+  	width: 100%;
+	background: rgba(204,230,255,0.8);
+ 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ 	opacity: 1;
+ 	font-size: 20px;
+}
+.menu li:hover{
+	background: rgba(204,255,255,1);
+}
+.ori {
+	font-size: 25px;
+	height: 40px;
+	background: rgba(255,255,255,0.7);
+	border: 2px solid;
+	border-color: rgba(255,255,255,0.7); 
+	font-family: 'cwTeXYen', sans-serif;
+	border-radius: 10px; 
+	box-sizing: border-box;
+}
